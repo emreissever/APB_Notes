@@ -79,6 +79,7 @@ As seen in the simulation results, Testbench signals exactly matches the wavefor
 | ---------------------- | ------- | ------ | ----- |
 | PWM Enable             | 0x0     | 1-Bit  | write |
 | PWM Duty Cycle (Width) | 0x1     | 32-Bit | write |
+| PWM Frequency          | 0x0     | 32-Bit | write |
 
 Physically RAM structure of all registers are as 32-bits wide.  
 
@@ -86,11 +87,16 @@ Physically RAM structure of all registers are as 32-bits wide.
 
 `PWM Duty Cycle (Width)` : Indicates PWM Duty Cycle Percentage.
 
-It take 32 bit value. 
+It takes 32 bit value. 
 
 32'h00000000 = %0 Duty Cycle
+
 32'h01111111 = %50 Duty Cycle
+
 32'h11111111 = %100 Duty Cycle
+
+`PWM Frequency` : 
+
 
 
 
